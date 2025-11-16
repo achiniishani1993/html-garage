@@ -16,29 +16,83 @@
             border-collapse: collapse;
             border-radius: 10px;
         }
-        
+
+        div {
+            width: 300px;
+            margin: auto;
+        }
+
+        div.mycontainer {
+            width: 100%;
+            overflow: auto;
+        }
+
+        div.mycontainer div {
+            width: 33%;
+            float: left;
+        }
+
+        .mycontainer {
+            display: flex;
+        }
+
+        .mycontainer>div {
+            width: 33%;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 100% 100% 100%;
+        }
+
+        .city {
+            background-color: aquamarine;
+            color: blue;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .note {
+            font-size: 150%;
+            color: coral;
+        }
+
+        #h4header {
+            background-color: #3f9b62;
+            padding: 20px;
+            text-align: right;
+            color: black;
+        }
     </style>
 
 </head>
 
 <body style="background-color:#5e3333;">
 
-    <a href="#bookmark">
-        <h1>Chapter 1- My first work</h1>
-    </a>
-    <a href="#bookmark">
-        <h1> Chapter 2- How to put tables</h1>
-    </a>
+    <h1 style="text-align: center;">Table of contents</h1>
 
+    <p style="font-size: 25px;"><a href="#chap1">Chapter 1</a></p>
+    <p style="font-size: 25px;"><a href="#chap2">Chapter 2</a></p>
+    <p style="font-size: 25px;"><a href="#chap3">Chapter 3</a></p>
+    <p style="font-size: 25px;"><a href="#chap4">Chapter 4</a></p>
+    <p style="font-size: 25px;"><a href="#chap5">Chapter 5</a></p>
+    <p style="font-size: 25px;"><a href="#chap6">Chapter 6</a></p>
+    <p style="font-size: 25px;"><a href="#chap7">Chapter 7</a></p>
+    <p style="font-size: 25px;"><a href="#chap8">Chapter 8</a></p>
+    <p style="font-size: 25px;"><a href="#chap9">Chapter 9</a></p>
+    <p style="font-size: 25px;"><a href="#chap10">Chapter 10</a></p>
+    <p style="font-size: 25px;"><a href="#chap11">Chapter 11</a></p>
 
     <p style="background-color: bisque;">Hello this is myself learning tutorials</p>
     <hr>
-    <p1 style="text-align: center;">මුසාකරනය කළ හැකි <abbr title="I love you">ILY</abbr></p1>
-<br>
+    <p style="text-align: center;">මුසාකරනය කළ හැකි <abbr title="I love you">ILY</abbr></p>
+    <br>
 
-    <p2> <ins>සාමාන්යයෙන් කුරියර් </ins> </p2>
-    <p3> <em>සාමාන්යයෙන් කුරියර් </em> <mark>මේක හරිම කැතයි</mark> Here I have used serveral html tags <del>sports</del> <ins> IT</ins> I was
-        study in 10 <sup>2</sup> This number is not valid q <sub>2</sub></p3>
+    <p> <ins>සාමාන්යයෙන් කුරියර් </ins> </p>
+    <p> <em>සාමාන්යයෙන් කුරියර් </em> <mark>මේක හරිම කැතයි</mark> Here I have used serveral html tags <del>sports</del>
+        <ins> IT</ins> I was
+        study in 10 <sup>2</sup> This number is not valid q <sub>2</sub></p>
 
 
     <h2> Heading two - adding Css file </h2>
@@ -58,7 +112,7 @@
             <a href="mailto:achiniishani1993@gmail.com"> send mail</a>
             <br>
 
-            <p4 style="background-image:'/Users/pramodshehan/Downloads/Home 3.jpeg';"> opulation & sampling: Define
+            <p style="background-image:'/Users/pramodshehan/Downloads/Home 3.jpeg';"> opulation & sampling: Define
                 eligible athletes (e.g., competitive 13,17 y/o). Sample using stratified random sampling (strata: sex,
                 age-group, sport) to ensure balance, then obtain consent/assent.
 
@@ -85,7 +139,7 @@
                 to receiving coaching.
 
                 Data logging: keep sampling frame, RNG seed, recruitment log, fidelity scores, and exposure
-                hours. </p4>
+                hours. </p>
 
             <br>
             <img src="/Users/pramodshehan/Downloads/Noop 2.jpg" alt="My work" width="300" height="500"
@@ -94,7 +148,7 @@
 
             <address> 227/21 A <br> Gamunu Road<br> Maharagama </address>
 
-            <h1 id="bookmark"> Chapter 1</h1>
+            <h1 id="chap1"> My first work</h1>
 
 
             <h1> Image map</h1>
@@ -105,13 +159,13 @@
                 <area shape="rect" coords="34, 44, 270, 350" href=" https://www.linkedin.com/feed/">
             </map>
 
-            <h1 id="bookmark"> Chapter 2- table </h1>
-<!-- HTML Tables -->
+            <h1 id="chap2"> How to put table</h1>
+            <!-- HTML Tables -->
             <table style="width: 100%;">
-                  <colgroup>
-    <col span="2" style="background-color: #eed6ee">
-    <col span="" style="background-color: pink">
-  </colgroup>
+                <colgroup>
+                    <col span="2" style="background-color: #eed6ee">
+                    <col span="" style="background-color: pink">
+                </colgroup>
                 <tr>
                     <th colspan="2" style="width: 50%;"> Names </th>
                     <th> Jobs</th>
@@ -140,8 +194,8 @@
                 </tr>
             </table>
             <br>
-            <table style="width: 100%;" >
-                
+            <table style="width: 100%;">
+
                 <caption style="font-size: large; color: azure;"> <strong> My friends details </strong></caption>
                 <br>
                 <tr>
@@ -179,25 +233,155 @@
                     <td>32</td>
                     <td>29</td>
                 </tr>
- </table>
-<!-- HTML Lists -->
+            </table>
+            <!-- HTML Lists -->
 
-<!-- Unordered HTML List, starts with the <ul> tag. Each list item starts with the <li> tag. -->
-<h1>Unordered HTML List</h1>
-<ul>         
-<li>item 1</li>
-<li>Item 2</li>
-<li>Item 3</li>
-</ul>
+            <!-- Unordered HTML List, starts with the <ul> tag. Each list item starts with the <li> tag. -->
+            <h1 id="chap3">Unordered HTML List</h1>
+            <ul>
+                <li>item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
 
-<!-- Ordered list starts with the <ol> tag. Each list item starts with the <li> tag -->
-<h1>Ordered Lists</h1>
-<ol>
-    <li>item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-</ol>
+            <!-- Ordered list starts with the <ol> tag. Each list item starts with the <li> tag -->
+            <h1 id="chap4">Ordered Lists</h1>
+            <ol>
+                <li>item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
 
-<!-- <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term: -->
-    
+            <!-- <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term: -->
+            <h1 id="chap5">description list</h1>
+            <dl>
+                <dt>item 1
+            </dl>
+            <dd>sweet items </dd>
+            <dt>Item 2</dt>
+            <dd>food items</dd>
+            <dt>item 3</dt>
+            <dd>stationary items</dd>
+            </dl>
+
+            <!-- HTML Div Element -->
+
+            <h1 id="chap6">Multiple DIV Elements with center align</h1>
+
+            <div style="background-color:#3f9b62;">
+                <h2>Hemorrhoids</h2>
+                <p>Drink ½ cup of pure aloe vera juice once a day</p>
+
+            </div>
+
+            <div style="background-color:#FFC0C7;">
+                <h2>Skin irritation</h2>
+                <p>Gently wash with warm water (no soap or scented wipes), then pat dry with a soft towel.</p>
+            </div>
+
+            <div style="background-color:#D9EEE1;">
+                <h2>Inflammatory conditions</h2>
+                <p>RAsk for mebendazole or albendazole (available in most pharmacies).
+                    Usually a single dose is taken, then repeated after 2 weeks.</p>
+            </div>
+
+            <h1 id="chap7">float tag to side by side and flex- align three </h1>
+            <div class="mycontainer">
+                <div style="background-color:#3f9b62;">
+                    <h2>Hemorrhoids</h2>
+                    <p>Drink ½ cup of pure aloe vera juice once a day</p>
+
+                </div>
+
+                <div style="background-color:#FFC0C7;">
+                    <h2>Skin irritation</h2>
+                    <p>Gently wash with warm water (no soap or scented wipes), then pat dry with a soft towel.</p>
+                </div>
+
+                <div style="background-color:#D9EEE1;">
+                    <h2>Inflammatory conditions</h2>
+                    <p>RAsk for mebendazole or albendazole (available in most pharmacies).
+                        Usually a single dose is taken, then repeated after 2 weeks.</p>
+                </div>
+            </div>
+
+            <h1 id="chap8">Grid Example </h1>
+            <div class="grid-container">
+                <div style="background-color:#3f9b62;">
+                    <h2>Hemorrhoids</h2>
+                    <p>Drink ½ cup of pure aloe vera juice once a day</p>
+
+                </div>
+
+                <div style="background-color:#FFC0C7;">
+                    <h2>Skin irritation</h2>
+                    <p>Gently wash with warm water (no soap or scented wipes), then pat dry with a soft towel.</p>
+                </div>
+
+                <div style="background-color:#D9EEE1;">
+                    <h2>Inflammatory conditions</h2>
+                    <p>RAsk for mebendazole or albendazole (available in most pharmacies).
+                        Usually a single dose is taken, then repeated after 2 weeks.</p>
+                </div>
+            </div>
+
+            <!-- The class element  -->
+            <h1 id="chap9">HTML class Attribute</h1>
+            <h2>.city style definition </h2>
+            <div class="city">
+                <div style="border: 2px solid black;">
+                    <h2>Hemorrhoids</h2>
+                    <p>Drink ½ cup of pure aloe vera juice once a day</p>
+
+                </div>
+
+                <div style="border: 2px solid black;">
+                    <h2>Skin irritation</h2>
+                    <p>Gently wash with warm water (no soap or scented wipes), then pat dry with a soft towel.</p>
+                </div>
+
+                <div style="border: 2px solid black;">
+                    <h2>Inflammatory conditions</h2>
+                    <p>RAsk for mebendazole or albendazole (available in most pharmacies).
+                        Usually a single dose is taken, then repeated after 2 weeks.</p>
+                </div>
+            </div>
+
+            <h2>.note style definition </h2>
+
+            <p> span elements with a class <span class="note"> .note style definition</span> The class attribute is
+                often used to point to a class name in a style sheet. It can also be used by JavaScript to access and
+                manipulate elements with the specific class name</p>
+
+            <h1 id="chap10">Use of the class Attribute in JavaScript</h1>
+            <p>JavaScript can access elements with a specific class name with the getElementsByClassName() method</p>
+
+            <button onclick="myfunction()">Hide details</button>
+
+            <h2 class="city">Inflammatory conditions</h2>
+            <p>RAsk for mebendazole or albendazole (available in most pharmacies).
+                Usually a single dose is taken, then repeated after 2 weeks.</p>
+
+            <script>
+                function myfunction() {
+                    var x = document.getElementsByClassName("city"); for (var i = 0; i < x.length; i++) { x[i].style.display = "none" };
+                }
+            </script>
+
+            <h1 id="chap11">The id Attribute</h1>
+
+            <h4 id="h4header">In this example h4 element is points to the id name "h4header", this h4 element will be
+                styled according to the #h4header style definition</h4>
+
+            <h3>Using the id Attribute in JavaScript- getElementById()</h3>
+
+            <p id="myid">Use the id attribute to manipulate text with JavaScript</p>
+            <button onclick="myfunction()">read more</button>
+
+            <script>
+                function myfunction() {
+                    document.getElementById("myid").innerHTML = "The id attribute can also be used by JavaScript to perform some tasks for that specific element";
+                }
+            </script>
+
 </html>
